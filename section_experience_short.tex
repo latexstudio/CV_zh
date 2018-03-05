@@ -1,0 +1,85 @@
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/huajh/huajh-awesome-latex-cv
+%
+% Author:
+% Junhao Hua
+
+
+%Section: Work Experience at the top
+\sectionTitle{实习/项目经历}{\faCode}
+ 
+\begin{experiences}
+			
+ \experience
+    {2017年9月} {水下焊接机器人建模与控制研究}{ 哈尔滨工业大学}{博士研究课题}
+{2014年9月} {
+          \begin{itemize}
+          	\item 设计完成了\emph{国内首款核电站水下焊接机器人}，采用矢量布置的八推进器实现机器人水下全姿态运动，搭载三自由度移动平台完成水下焊接作业;
+            \item 完成了水下焊接机器人软硬件设计，采用远程遥操作与机器人自主运动控制相结合的控制结构，水下控制系统采用搭载Linux内核的ARM芯片作为主控芯片，水面控制系统采用机器人操作系统（ROS）；
+            \item 提出了\emph{多区域划分定位算法(MRDL)}，结合高度计与姿态航向参考系统实现受限水域水下定位。
+            \item 建立了\emph{水下推进器推力预测模型}，利用\emph{高斯过程回归}对推进器类空化效应进行预测，建立精确的推进器推力模型；
+            \item 提出了\emph{水下机器人变质心补偿算法}，对三自由度移动平台作业过程中的变质心特性进行补偿，实现高精度的焊接稳定控制；
+            \item \faGithub: 
+            \link{https://github.com/thinkexist1989/Underwater-Welding-Vehicle}{Underwater-Welding-Vehicle}, 
+            \link{https://github.com/thinkexist1989/ROVControl}{ROVControl},
+            \link{https://github.com/thinkexist1989/ThrustExpr}{Thrust Experiment},
+            \link{https://github.com/thinkexist1989/Program_on_Pompano}{Program on Pompano}. 
+                
+          \end{itemize}
+        }
+        {水下焊接机器人, ROS,多区域划分定位算法, 高斯过程回归, 变质心补偿算法, Linux, C/C++, Qt, MFC, CMAKE}
+  \emptySeparator
+  \experience
+    {2018年1月} {高精度石墨烯生物检测系统}{哈尔滨工业大学}{ 独立开发}
+    {2017年9月}    {
+		\begin{itemize}
+			\item 采用凌特(Linear Tech) 高精度运放芯片LT1462实现10uA电流转换电压与电压信号放大;
+			\item 采用德州仪器(TI)16位高精度DA芯片DAC8830与LT1462实现10mV高精度稳压输出; 
+			\item 采用德州仪器(TI)4路24位高精度AD芯片ADS1274与THS4524差动运放实现高精度电压采集;
+			\item 采用意法半导体(ST) STM32F407芯片实现数据处理、通讯处理和实时显示，利用HAL库实现程序快速配置与封装;                    
+			\item 完成4层PCB印制电路板设计，并利用Qt编写PC端数据采集与实时曲线显示。                                                                                  
+		\end{itemize}
+		}
+		{LT1462, DAC8830, ADS1274, THS4524, STM32F407, HAL库, Altium Designer, Qt, ChartDirector}
+
+	\emptySeparator
+	\experience
+	{2014年7月} {室内助行机器人导航研究}{哈尔滨工业大学}{硕士毕业设计}
+	{2012年9月}    {
+	   	\begin{itemize}
+	   		\item 采用稀疏超声波阵列方式，实现了\emph{超声波网络定位系统设计}，在满足精度要求前提下极大降低了超声波阵列的布置密度；
+	   		\item 利用编码器与电子罗盘的航迹推算组合实现了大范围长距离定位；
+	   		\item 利用\emph{双层卡尔曼滤波}实现航迹推算和超声波网络定位的数据融合，避免长距离误差积累。
+	   		\item 完成导航系统软硬件设计，采用ARM作为主控芯片，搭载Linux内核，利用Qt实现GUI设计与多线程任务处理。 \faGithub: \link{https://github.com/thinkexist1989/NaviOS}{NaviOS}.	 		
+	   		
+	   	\end{itemize}
+	}
+	{助行机器人, 超声波网络定位, 航迹推算, ARM, Linux, Qt}
+	
+	\emptySeparator
+	\experience
+	{2013年5月} {喷管延伸段延伸机构功能及载荷试验}{哈尔滨工业大学}{设计全程参与、试验独立完成}
+	{2012年7月}    {
+		\begin{itemize}
+			\item 航天一院委托哈工大设计研制的\emph{喷管延伸机构试验装置}，本人独立完成功能及载荷试验；
+			\item 电控系统以研华PCI-1784数据采集卡为核心，基于Labview实现底层控制与人机交互，本人完成对电控部分的程序编写、优化及修改；
+			\item 独立完成喷管延伸段延伸机构的失重试验，载荷试验及超载试验。
+		\end{itemize}
+	}
+	{二级火箭推进器, 喷管延伸机构, PCI-1784, Labview, GUI}
+
+	\emptySeparator
+	\experience
+	{2012年7月} {直驱集成一体式电液推力装置设计}{哈尔滨工业大学}{本科毕业设计}
+	{2011年12月}    {
+	 	\begin{itemize}
+	 		\item 对\emph{直驱集成一体式液压推力装置}进行了系统设计，其中包括液压系统设计、液压元件选择、阀块设计、液压缸设计、电液推杆整体结构设计；
+	 		\item 利用AutoCAD软件绘制了液压系统原理图、阀块零件图、阀块装配图、液压缸装配图、液压缸前端盖零件图、电液推杆总装图、连接板零件图、联轴箱零件图和外观图；
+	 		\item 对直驱集成一体式液压推力装置进行了电控部分设计，采用西门子PLC作为伺服控制器。
+	 	\end{itemize}
+	}
+	{AutoCAD, 直接驱动, 交流伺服电机, 闭式回路, 液压缸}
+		
+\end{experiences}
