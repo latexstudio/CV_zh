@@ -17,7 +17,7 @@
 {2014年9月} {
           \begin{itemize}
           	\item 设计完成了\emph{国内首款核电站水下焊接机器人}，采用矢量布置的八推进器实现机器人水下全姿态运动，搭载三自由度移动平台完成水下焊接作业;
-            \item 完成了水下焊接机器人软硬件设计，采用远程遥操作与机器人自主运动控制相结合的控制结构，水下控制系统采用搭载Linux内核的ARM芯片作为主控芯片，水面控制系统采用机器人操作系统（ROS）；
+            \item 完成了机器人软硬件设计，采用远程遥操作与自主运动控制相结合的控制结构，水下控制系统采用搭载Linux内核的ARM芯片作为主控芯片，水面控制系统采用机器人操作系统（ROS）；
             \item 提出了\emph{多区域划分定位算法(MRDL)}，结合高度计与姿态航向参考系统实现受限水域水下定位。
             \item 建立了\emph{水下推进器推力预测模型}，利用\emph{高斯过程回归}对推进器类空化效应进行预测，建立精确的推进器推力模型；
             \item 提出了\emph{水下机器人变质心补偿算法}，对三自由度移动平台作业过程中的变质心特性进行补偿，实现高精度的焊接稳定控制；
@@ -39,7 +39,11 @@
 			\item 采用德州仪器(TI)16位高精度DA芯片DAC8830与LT1462实现10mV高精度稳压输出; 
 			\item 采用德州仪器(TI)4路24位高精度AD芯片ADS1274与THS4524差动运放实现高精度电压采集;
 			\item 采用意法半导体(ST) STM32F407芯片实现数据处理、通讯处理和实时显示，利用HAL库实现程序快速配置与封装;                    
-			\item 完成4层PCB印制电路板设计，并利用Qt编写PC端数据采集与实时曲线显示。                                                                                  
+			\item 完成4层PCB印制电路板设计，并利用Qt编写PC端数据采集与实时曲线显示。 
+			\item \faGithub:
+			\link{https://github.com/thinkexist1989/HzBoardDataDisplay}{Real-time display},
+			\link{https://github.com/thinkexist1989/DataCollectionBoard_v1_Code}{Board V1},
+			\link{https://github.com/thinkexist1989/DataCollectionBoard_v2_Code}{Board V2}.                                                              
 		\end{itemize}
 		}
 		{LT1462, DAC8830, ADS1274, THS4524, STM32F407, HAL库, Altium Designer, Qt, ChartDirector}
