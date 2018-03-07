@@ -3,7 +3,8 @@
 
 + 该分支包含所有文件，**包括中文字体**，文件比较大
 
-
+## 示例
++ 点击下载 [PDF](http://oxuze83b3.bkt.clouddn.com/CV/pdf/CV_zh.pdf) 示例。
 ## 编译
 
 +  采用 `xelatex` 编译。
